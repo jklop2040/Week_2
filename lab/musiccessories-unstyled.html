@@ -5,24 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Musiccessories</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body class="border">
   <div>
-    <div>
-      <h1>
-        <a href="index.html">
+    <div class="flex">
+      <h1 class="w-1/2">
+        <a href="index.html" class="text-xl">
           <span>Hi! Welcome to</span>
           <span>Musiccessories!</span>
         </a>
       </h1>
   
-      <p>
+      <p class="text-xl w-1/2">
         <strong>No instruments.</strong> <em>Only accessories.</em>
       </p>
     </div>
-    <div>
-      <div>
+    <div class="flex">
+      <div class="w-1/3">
         <div>
           <h2>Guitar Strings</h2>
           <div>
@@ -32,7 +33,7 @@
           <div>$5.49</div>
         </div>
       </div>
-      <div>
+      <div class="w-1/3">
         <div>
           <h2>Guitar Picks (12-pack)</h2>
           <div>
@@ -42,7 +43,7 @@
           <div>$2.99</div>
         </div>
       </div>
-      <div>
+      <div class="w-1/3">
         <div>
           <h2>Drum Sticks (Pair)</h2>
           <div>
@@ -53,8 +54,18 @@
         </div>
       </div>
     </div>
-    <h1>Ready to Order?</h1>
-    <!-- Order form goes here -->
+    <h1 class="text-center text-xl">Order Now!</h1>
+    <div>
+      <h1 class="font-bold text-2xl uppercase m-4">Sign up to learn more</h1>
+      <form action="https:maps.google.com">
+        <label for="name" class="font-bold black">Your Name</label>
+        <input type="text" id="name" name="name" class="border border-gray-400 rounded my-2 p-2">
+  
+        <label for="favorite-color" class="font-bold">Your E-mail</label>
+        <input type="text" name="favoriteColor" class="border border-gray-400 rounded my-2 p-2">
+  
+        <button class="block mt-4 bg-blue-500 text-white px-4 py-2 rounded">Submit form!</button>
+      </form>
   </div>
 </body>
 
